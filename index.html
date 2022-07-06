@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="login.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+
+    <div class="login_left">
+        <h1 style="font-style: inherit">CMD</h1>
+        <h2 >Code<br><br>Master<br><br>Draft</h2>
+    </div>
+    <div class="login_right">
+        <!--        <div class="id">ID</div>-->
+        <form action="./login.php" method="post">
+            <input type="text" name="ID" id="ID" placeholder="ID" class="id" required>
+            <!--        <div class="ps">PS</div>-->
+            <input type="password" name="PW" id="PW" placeholder="PW" class="ps" required>
+            <div class="find">
+                <button class="sign_up" style="float: left" onclick=" location.href='sign_up.html'" >회원가입</button>
+                <button class="find_id" onclick="location.href='find_id.html'">아이디 찾기</button>
+                <button class="findPs" onclick="location.href='find_ps.html'">비밀번호 찾기</button>
+            </div>
+            <button class="button" style="margin-right: 50px" type="submit" >Login</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

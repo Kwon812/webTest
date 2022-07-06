@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link href="sign_up.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+
+    <div class="login_left">
+        <h1 style="font-style: inherit">C<br>M<br>D</h1>
+
+<!--        <h2 >Code<br><br>Master<br><br>Draft</h2>-->
+    </div>
+    <div class="login_right">
+        <form method="post" action="./sign_up.php" >
+            <input type="text" class="stu_input" id="major"  name="info[]" placeholder="학과" required>
+            <input type="text" class="stu_input" id="stu_num" name="info[]"  placeholder="학번" pattern="([0-9]){8}" required >
+            <input type="text" class="stu_input" id="stu_name" name="info[]" placeholder="이름"required>
+            <input type="text" class="stu_input" id="id" name="info[]" placeholder="ID" pattern="^([a-z0-9_]){6,50}$" title="영소문자, 숫자포함 6자 이상" required>
+            <input type="password" class="stu_input" id="ps" name="info[]" placeholder="PS" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*()_-+=[]{}~?:;`|/]).{6,50}$" title="영문 대소문자,특수문자,숫자 포함 6자 이상" required>
+            <button class="button" type="submit"> Sign up</button>
+        </form>
+<!--        <div class="id">학과</div>-->
+<!--        <div class="num">학번</div>-->
+<!--        <div class="ps">이름</div>-->
+<!--        <div class="num">ID</div>-->
+<!--        <div class="ps">PW</div>-->
+        <script src="sign_up.js"></script>
+
+    </div>
+
+</div>
+</body>
+</html>
